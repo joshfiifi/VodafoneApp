@@ -9,14 +9,23 @@
         rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="js/tailwind.js"></script>
+    <style>
+        .hide-scroll-bar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .hide-scroll-bar {
+            scrollbar-width: none;
+        }
+    </style>
 
 </head>
 
-<body>
-    <div class="w-full bg-white flex flex-col overflow-y-hidden">
+<body class="sm:bg-black">
+    <div class="w-full h-screen sm:w-96  sm:mx-auto bg-white  rounded-2xl  flex flex-col overflow-y-hidden">
 
         <!-- appbar -->
-        <div class=" w-full h-auto fixed flex justify-between items-center bg-[F2F8F8] p-4">
+        <div class=" w-full sm:w-96 sm:mx-auto h-auto fixed flex justify-between items-center bg-[F2F8F8] p-4">
             <div class="rounded-full w-6 h-6 justify-center items-center  ">
                 <img class="object-cover " src="/assets/images/vodafone-png-logo-8432.png" alt="vodafone-logo"
                     srcset="">
@@ -35,7 +44,7 @@
         </div>
         <!-- end app bar -->
 
-        <main class="my-20 p-4 flex flex-col gap-4 h-screen overflow-y-auto">
+        <main class="pt-20 pb-32  p-4 flex flex-col gap-4 overflow-y-auto hide-scroll-bar">
             <!-- data consumption card -->
             <div class="w-full flex flex-col gap-4 rounded-xl p-4 bg-gray-50 border border-gray-100">
                 <div class="w-6 h-6 text-vodafoneRed flex items-center justify-center">
@@ -126,10 +135,16 @@
                         <p class="text-gray-400 text-left text-xs font-base w-full truncate">Recharge airtime or data to
                             this phone</p>
                     </div>
-                    <div class="w-6 h-6 text-vodafoneRed flex justify-center items-center"></div>
+                    <div class="w-6 h-6 text-gray-400 flex justify-center items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-chevron-right">
+                            <path d="m9 18 6-6-6-6" />
+                        </svg>
+                    </div>
                 </div>
                 <div class="flex justify-between items-start gap-4 p-4 px-2">
-                    <div class="p-2 bg-gray-100 rounded-full text-vodafoneRed flex justify-center items-center">
+                    <div class="p-2 bg-gray-100 rounded-full text-gray-400 flex justify-center items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                             fill="#9C9B9D" stroke="#757575" stroke-linecap="round" stroke-linejoin="round"
                             class="lucide lucide-smartphone">
@@ -143,10 +158,16 @@
                         <p class="text-gray-400 text-left text-xs font-base w-full truncate">Manage all your
                             subscriptions</p>
                     </div>
-                    <div class="w-6 h-6 text-vodafoneRed flex justify-center items-center"></div>
+                    <div class="w-6 h-6 text-gray-400 flex justify-center items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-chevron-right">
+                            <path d="m9 18 6-6-6-6" />
+                        </svg>
+                    </div>
                 </div>
                 <div class="flex justify-between items-start gap-4 p-4 px-2">
-                    <div class="p-2 bg-gray-100 rounded-full  text-vodafoneRed flex justify-center items-center">
+                    <div class="p-2 bg-gray-100 rounded-full  text-gray-400 flex justify-center items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                             fill="#9C9B9D" stroke="#757575" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round" class="lucide lucide-sparkles">
@@ -165,10 +186,16 @@
                             subscriptions
                         </p>
                     </div>
-                    <div class="w-6 h-6 text-vodafoneRed flex justify-center items-center"></div>
+                    <div class="w-6 h-6 text-gray-400 flex justify-center items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-chevron-right">
+                            <path d="m9 18 6-6-6-6" />
+                        </svg>
+                    </div>
                 </div>
                 <div class="flex justify-between items-start gap-4 p-4 px-2">
-                    <div class="p-2 bg-gray-100 rounded-full  text-vodafoneRed flex justify-center items-center">
+                    <div class="p-2 bg-gray-100 rounded-full  text-gray-400 flex justify-center items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                             fill="#9C9B9D" stroke="#757575" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round" class="lucide lucide-sparkles">
@@ -187,10 +214,16 @@
                             subscriptions
                         </p>
                     </div>
-                    <div class="w-6 h-6 text-vodafoneRed flex justify-center items-center"></div>
+                    <div class="w-6 h-6 text-gray-400 flex justify-center items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-chevron-right">
+                            <path d="m9 18 6-6-6-6" />
+                        </svg>
+                    </div>
                 </div>
                 <div class="flex justify-between items-start gap-4 p-4 px-2">
-                    <div class="p-2 bg-gray-100 rounded-full  text-vodafoneRed flex justify-center items-center">
+                    <div class="p-2 bg-gray-100 rounded-full  text-gray-400 flex justify-center items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                             fill="#9C9B9D" stroke="#757575" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round" class="lucide lucide-sparkles">
@@ -209,7 +242,13 @@
                             subscriptions
                         </p>
                     </div>
-                    <div class="w-6 h-6 text-vodafoneRed flex justify-center items-center"></div>
+                    <div class="w-6 h-6 text-gray-400 flex justify-center items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-chevron-right">
+                            <path d="m9 18 6-6-6-6" />
+                        </svg>
+                    </div>
                 </div>
             </div>
 
@@ -218,7 +257,8 @@
 
 
         <!-- bottom navigation -->
-        <div class="fixed bottom-0 w-full flex items-center justify-between p-4 bg-[#F8F8F8] shadow-sm">
+        <div
+            class="fixed bottom-0 w-full sm:w-96 sm:mx-auto flex items-center justify-between p-4 bg-[#F8F8F8] shadow-sm">
             <div class="flex flex-col items-center gap-2 ">
                 <div class="text-gray-500 flex justify-center items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -246,8 +286,10 @@
                 <p class="text-gray-500 text-left w-full text-xs font-medium w-full">Cash</p>
             </div>
             <div class="flex flex-col items-center gap-2 ">
-                <div class="text-gray-500 flex justify-center items-center"></div>
-                <!-- <p class="text-gray-500 text-left w-full text-xs font-medium w-full">Services</p> -->
+                <div class="text-gray-500 flex justify-center items-center p-2 bg-white rounded-full shadow-xl">
+                    <img class="object-cover  w-8 h-auto" src="/assets/images/vodafone-png-logo-8432.png"
+                        alt="vodafone-logo" srcset="">
+                </div>
             </div>
             <div class="flex flex-col items-center gap-2 ">
                 <div class="text-gray-500 flex justify-center items-center">
