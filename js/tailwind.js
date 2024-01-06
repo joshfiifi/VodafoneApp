@@ -2,7 +2,7 @@ tailwind.config = {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ['"Inter", "sans-serif"'],
+				sans: ['"Outfit", "sans-serif"'],
 			},
 			colors: {
 				white: "#FFFFFF",
@@ -18,35 +18,7 @@ tailwind.config = {
 					800: "#004147",
 					900: "#002123",
 				},
-				azure: {
-					100: "#D2E6F3",
-					200: "#A4CDE6",
-					300: "#77B3DA",
-					400: "#499ACD",
-					500: "#1C81C1",
-					600: "#16679A",
-					700: "#114D74",
-					800: "#0B344D",
-					900: "#061A27",
-				},
-				violet: {
-					50: "#F7F6FE",
-					100: "#DCDAF9",
-					200: "#B8B6F3",
-					300: "#9591EC",
-					400: "#716DE6",
-					500: "#4E48E0",
-					600: "#3E3AB3",
-					700: "#2F2B86",
-					800: "#1F1D5A",
-					900: "#100E2D",
-				},
-				gray: {
-					900: "#111111",
-					800: "#54595F",
-					700: "#E8E8E8",
-					600: "#F7F8FB",
-				},
+				vodafoneRed: "#E30613",
 			},
 		},
 	},
